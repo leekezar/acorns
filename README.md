@@ -50,3 +50,4 @@ TBD
 | BERT | normalized, latent translation | TBD |
 | BERT | normalized, face encoding + latent translation | TBD |
 | BERT | normalized, face encoding + hand encoding + latent translation | TBD |
+

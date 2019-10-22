@@ -1,0 +1,5 @@
+venv/
+client_secret.json
+credentials.json
+captions/
+videos/
