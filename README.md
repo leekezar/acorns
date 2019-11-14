@@ -1,5 +1,5 @@
 # acorns
- **A**nnotated **Cor**pus of **N**atural **S**igning
+ **A**merican **Cor**pus of **N**atural **S**igning
 
 ## About
 This corpus provides 1000 hours of people using American Sign Language alongside a gold-standard, sentence-aligned interpretation and a silver-standard, word-aligned gloss. It is designed to be used for machine translation applications to and from English. It is compiled by Rany Tith and Lee Kezar.
