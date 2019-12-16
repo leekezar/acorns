@@ -2,7 +2,7 @@
  **A**merican **Cor**pus of **N**atural **S**igning
 
 ## About
-This corpus provides 1000 hours of people using American Sign Language alongside a gold-standard, sentence-aligned interpretation and a silver-standard, word-aligned gloss. It is designed to be used for machine translation applications to and from English. It is compiled by Rany Tith and Lee Kezar.
+This corpus provides 60 hours of people using American Sign Language alongside a gold-standard, sentence-aligned interpretation and a silver-standard, word-aligned gloss. It is designed to be used for machine translation applications to and from English. It is compiled by Rany Tith and Lee Kezar.
 
 ## Formatting (Anticipated)
 A global listing of video IDs and their meta information can be found in `videos_meta.csv`. Note that each video is also marked with `train`, `dev`, or `test` for model development purposes (used in the baseline methods). A blind set exists for model evaluation purposes.
