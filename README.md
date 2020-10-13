@@ -1,5 +1,3 @@
-# Hello
-
 # acorns
  **A**merican **Cor**pus of **N**atural **S**igning
 
