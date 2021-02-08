@@ -101,13 +101,19 @@ class FrameExtractor:
         print(f'----- Successfully processed as {fname} -----')
 
 def main():
-    url = input('please enter a url to process: ')
+    path = input('please enter a video filepath: ')
+    new_filename = path[path.rfind('/')+1:path.rfind('.')].replace(' ', '_').lower()
+    accepted = 'abcdefghijklmnopqrstuvwxyz1234567890_'
+    for c in new_filename:
+        if c not in accepted:
+            new_filename = new_filename.replace(c, '')
+
     try:
-        FrameExtractor().process_url(url)
+        FrameExtractor().frame_capture(path, new_filename)
     except Exception as e:
-    #     print("an error occured:")
+        print("an error occured:")
         print(e)
-    #     print("terminating processes")
+        print("terminating processes")
     finally:
         print("goodbye!")
 

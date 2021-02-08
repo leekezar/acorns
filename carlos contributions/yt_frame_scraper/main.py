@@ -6,7 +6,7 @@ def process_channel(videos_link):
     print(f'/***** Processing Channel @ {videos_link} *****/')
 
     # create a list of video urls
-    list_videos = Playlist(videos_link).video_urls
+    list_videos = Playlist(videos_link)
 
     # vars to keep track of videos downloaded
     video_count = 0
@@ -37,7 +37,7 @@ def main():
 
     for channel in ifile:
         if channel not in processed_channels:
-            process_channel(channel)
+            process_channel(channel.strip())
             print(channel, file=ofile)
             processed_channels.append(channel)
 
