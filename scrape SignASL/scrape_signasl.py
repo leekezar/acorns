@@ -44,15 +44,12 @@ def parse_sign_page(sign, html):
 		if "How to sign:</b> " in line:
 			curr_def = get_between(line, "</b>", "<br />")
 
-		# the different variations: <meta> video, <video> video, or youtube video.
-		if ".mp4" in line:
+		# the different variations of video elements
+		if ".mp4" in line or "youtube.com/watch" in line:
 			if "content" in line:
-				vid_url = get_between(line, "content=\"", ".mp4", True)
+				vid_url = get_between(line, "content=\"", "\"")
 			elif "src" in line:
-				vid_url = get_between(line, "src=\"", ".mp4", True)
-		elif "youtube.com/watch" in line:
-				vid_url = get_between(line, "content=\"", "\" />")
-
+				vid_url = get_between(line, "src=\"", "\"")
 		else:
 			continue
 
