@@ -1,2 +1,5 @@
 *.jpg
 *.mp4
+*.ipynb
+*.json
+*.ini
